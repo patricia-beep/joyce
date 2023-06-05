@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5em;
+  color: rgb(0, 0, 0);
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #796363;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #7e6c6c;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(36, 21, 21);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+/* TABLE FOR PRODUCTS */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th, tr {
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 5px;
+}
+
+td.img {
+  text-align: center;
+  padding: 4px;
+}
+
+/*
+tr:nth-child(even) {
+  background-color: #dddddd;
+} */
+
+/* CSS for Contact page -- Form */
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ea88f7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b66a7d;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#Home {background-color: rgb(134, 202, 202);}
+#Home {background-image: url(img0.png);}
+#Home {background-repeat: no-repeat;}
+#Home {background-position: center top;}
+
+#About {background-color: rgb(106, 175, 121);}
+#About {background-image: url(gadgets.jpg);}
+#About{background-repeat: no-repeat;}
+#About{background-position: center top;}
+#About{background-size: 1500px 1000px;}
+
+
+#Products {background-color: rgb(223, 107, 107);}
+#Products {background-image: url(image.jpg);}
+#Products {background-repeat: repeat;}
+#Contact {background-color: rgb(201, 35, 90);}
+#Gallery {background-color: rgb(144, 73, 161);}
+
+</style>
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'grey')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'grey')" >About</button>
+<button class="tablink" onclick="openPage('Products', this, 'grey')">Products</button>
+<button class="tablink" onclick="openPage('Contact', this, 'grey')">Contact</button>
+<button class="tablink" onclick="openPage('Gallery', this, 'grey')">Gallery</button>
+
+<div id="Home" class="tabcontent">
+ 
+
+ 
+  <!-- home -->
+
+  <h1 align = "center">OCAMPO's BOTIQUE</h1>
+<form  style =" background-color: #183839;  padding: 10px; "> 
+  <h4 align = "center">
+    Welcome to OCAMPO's BOTIQUE!! YOU CAN NOW SHOP ALL THE CLOTHES YOU WANT AT
+    A VERY AFFORDABLE PRICE WITH HIGH QUALITY FABRIC!
+
+    <br>
+    <br>
+
+  </h4>
+</form>
+
+</div>
+
+<div id="About" class="tabcontent">
+  <h2 align = "center">About</h2>
+  
+  <p>OCAMPO's BOTIQUE can help you find the perfect item, whether it's a gift for someone special or an outfit for a special occasion. 
+    We can also provide helpful advice on how to style an outfit or 
+    accessorize and can offer expert advice on what to buy and how to wear it.
+    <br>
+    <br> 
+    The purpose online shopping of OCAMPO's BOUTIQUE is that customers can purchase items from the comfort of their own homes or workplace. 
+    Shopping is made easier and convenient for the customer through the internet. It is also easy to cancel the transactions.
+    saves time and efforts.
+    <br>
+    <br> 
+    
+</div>
+
+<div id="Products" class="tabcontent">
+  <form style =" background-color: #e394f3;  padding: 10px;"
+ > 
+    
+      <h2 align ="center"> CLOTHES </h2>
+
+        <table>
+          <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+          </tr>
+
+          <tr>
+            <td>Formal dress</td>
+            <td> ₱750-1199</td>
+          </tr>
+
+          <tr>
+            <td>Pants</td>
+            <td> ₱1,300-1,800/td>
+          </tr> 
+
+          <tr>
+            <td>Shorts</td>
+            <td> ₱400-800</td>
+          </tr> 
+
+          <tr>
+            <td>T-Shirts</td> 
+            <td> ₱650-1000</td>
+          </tr> 
+
+          <tr>
+            <td>Croptop</td>
+            <td> ₱200-500</td>
+          </tr> 
+
+
+        </table>
+  </form>
+</div>
+
+<div id="Contact" class="tabcontent">
+  
+
+  <h2 align = "center"> Personal information & Feedbacks to OCAMPO's BOTIQUE</h2>
+  <form action="/action_page.php">
+    <label for="lname">Last Name</label>
+    <input type="text" id="fname" name="lastname" placeholder="Your name..">
+
+    <label for="fname">first Name</label>
+    <input type="text" id="fname" name="Firstname" placeholder="Your last name..">
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      
+    </select>
+
+    <label for="feedback">Send your Feedback </label>
+    <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea>
+
+   <!-- <input type="submit" value="Submit"> -->
+    <button onclick="myFunction()">Submit</button>
+  </form>
+
+</div>
+
+<div id="Gallery" class="tabcontent">
+  <h3>Gallery</h3>
+  <p>Showcase images or multimedia related to the website's theme</p>
+
+  <hr>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="pictures\312575355_943127273314383_4292082203183898883_n.jpg">
+        <img src="pictures\312575355_943127273314383_4292082203183898883_n.jpg" alt="Cinque Terre" width="200" height="100">
+      </a>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="pictures\345070870_1223855541620861_1539920234842441855_n.jpg">
+        <img src="pictures\345070870_1223855541620861_1539920234842441855_n.jpg" alt="Cinque Terre" width="200" height="100">
+      </a>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="pictures\351355070_1430099047820636_5200726970062198579_n.jpg">
+        <img src="pictures\351355070_1430099047820636_5200726970062198579_n.jpg" alt="Cinque Terre" width="200" height="100">
+      </a>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="pictures\351604995_1274415260165398_2056725323678758223_n.jpg">
+        <img src="pictures\351604995_1274415260165398_2056725323678758223_n.jpg" alt="Cinque Terre" width="200" height="100">
+      </a>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="pictures\351681629_199776342558207_2845924018751443381_n.jpg">
+        <img src="pictures\351681629_199776342558207_2845924018751443381_n.jpg" alt="Cinque Terre" width="200" height="100">
+      </a>
+    </div>
+  </div>
+
+  
+  
+  
+  
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+// function submit 
+
+function myFunction() {
+  window.alert("Thank you for Submitting your Feedback");
+  document.getElementById("demo").innerHTML = txt;
+}
+
+</script>
+   
+</body>
+</html>
